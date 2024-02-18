@@ -1,0 +1,108 @@
+/* phone.css */
+
+/* Navigation bar */
+#logo img {
+    height: 40px; /* Adjust logo height for smaller screens */
+}
+
+#navbar ul {
+    flex-direction: column; /* Stack nav items vertically on smaller screens */
+}
+
+#navbar ul li {
+    margin-bottom: 10px; /* Add space between nav items */
+}
+
+/* Home section */
+.container {
+    flex-direction: column; /* Stack text and image vertically */
+    text-align: center; /* Center-align text */
+}
+
+.text {
+    padding: 20px;
+}
+
+.text h1 {
+    font-size: 20px; /* Decrease heading size for smaller screens */
+}
+
+.text p {
+    font-size: 14px; /* Decrease paragraph size for smaller screens */
+}
+
+.image img {
+    width: 100%; /* Make image fill container */
+    height: auto; /* Ensure image adjusts proportionally */
+}
+
+/* Container 2 */
+.container2 {
+    flex-direction: column; /* Stack elements vertically */
+    align-items: center; /* Center-align items */
+}
+
+.right-colum1 h1,
+.right-colum2 h1,
+.right-colum3 h1 {
+    font-size: 14px; /* Decrease heading size for smaller screens */
+}
+
+/* Container 3 */
+#colleges {
+    flex-wrap: wrap; /* Allow boxes to wrap */
+}
+
+.box {
+    flex: 1; /* Take full width */
+    max-width: calc(50% - 12px); /* Two boxes per row with some space in between */
+    margin: 6px; /* Add space between boxes */
+}
+
+.box img {
+    width: 100%; /* Make images fill their containers */
+    height: auto; /* Ensure images adjust proportionally */
+}
+
+/* Testimonials section */
+.container6 {
+    flex-direction: column; /* Stack testimonials vertically */
+    align-items: center; /* Center-align items */
+}
+
+.container6 .image4,
+.container6 .image5,
+.container6 .image6,
+.container6 .image7 {
+    margin-bottom: 20px; /* Add space between testimonials */
+}
+
+/* Footer */
+.footer-nav ul li {
+    display: block; /* Stack footer links vertically */
+    margin: 10px 0; /* Add space between links */
+    text-align: center; /* Center-align text */
+}
+
+/* Media query for smaller screens */
+@media only screen and (max-width: 600px) {
+    /* Adjust styles for screens up to 600px wide */
+    #logo img {
+        height: 30px; /* Further decrease logo height */
+    }
+
+    .text h1 {
+        font-size: 18px; /* Decrease heading size even further */
+    }
+
+    .text p {
+        font-size: 12px; /* Decrease paragraph size even further */
+    }
+
+    .right-colum1 h1,
+    .right-colum2 h1,
+    .right-colum3 h1 {
+        font-size: 12px; /* Decrease heading size even further */
+    }
+}
+
